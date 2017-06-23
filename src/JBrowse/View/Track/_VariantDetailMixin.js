@@ -158,6 +158,7 @@ return declare( [FeatureDetailMixin, NamedFeatureFiltersMixin], {
             return;
 
         var counts = new NestedFrequencyTable();
+        delete genotypes.toString;
         for( var gname in genotypes ) {
             if( genotypes.hasOwnProperty( gname ) ) {
                 // increment the appropriate count
